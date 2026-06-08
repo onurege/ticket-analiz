@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "description": "Kök neden taksonomisi — yazılım destek + çağrı merkezi (ITIL + ODC + Ishikawa hibrit). LLM SADECE buradan seçer.",
+  "root_causes": [
+    {
+      "id": "user-error",
+      "name": "Kullanıcı Hatası",
+      "description": "Kullanıcının yanlış veya eksik işlem yapması",
+      "typical_owner": "L1",
+      "subs": [
+        "Yanlış İşlem/Adım",
+        "Hatalı Veri Girişi",
+        "Eğitim Eksikliği",
+        "Özellik Yanlış Anlaşılma"
+      ]
+    },
+    {
+      "id": "configuration",
+      "name": "Konfigürasyon / Parametre",
+      "description": "Sistem parametresi veya tanım kaynaklı sorun",
+      "typical_owner": "L1",
+      "subs": [
+        "Eksik/Yanlış Parametre",
+        "Eksik Tanım (Müşteri/Ürün/Rut)",
+        "Sistem Ayarı",
+        "Lisans/Aktivasyon"
+      ]
+    },
+    {
+      "id": "permission",
+      "name": "Yetki / Erişim",
+      "description": "Yetki tanımı veya erişim engeli",
+      "typical_owner": "L1",
+      "subs": ["Kullanıcı Yetkisi Eksik", "Rol Tanımı", "Menü Erişimi"]
+    },
+    {
+      "id": "data",
+      "name": "Veri Sorunu",
+      "description": "Eksik, hatalı, çelişen veri veya senkronizasyon",
+      "typical_owner": "L1",
+      "subs": [
+        "Eksik Veri",
+        "Hatalı/Çelişen Veri",
+        "Bozuk Kayıt",
+        "Senkronizasyon Sorunu"
+      ]
+    },
+    {
+      "id": "software-defect",
+      "name": "Yazılım Hatası (Bug)",
+      "description": "Üründe doğrulanmış kod kusuru",
+      "typical_owner": "L2",
+      "subs": [
+        "Mantık Hatası",
+        "Arayüz Hatası",
+        "Regression",
+        "Beklenmedik Exception",
+        "Hesaplama/Formül"
+      ]
+    },
+    {
+      "id": "integration",
+      "name": "Entegrasyon / 3. Parti",
+      "description": "Dış sistem veya servis kaynaklı",
+      "typical_owner": "L2",
+      "subs": [
+        "ERP (Logo/Netsis/Maya)",
+        "GİB / E-Belge Sağlayıcı",
+        "POS Gateway",
+        "Dış API",
+        "Auth/SSO"
+      ]
+    },
+    {
+      "id": "performance",
+      "name": "Performans",
+      "description": "Yavaşlık, timeout, yüksek kaynak tüketimi",
+      "typical_owner": "L2",
+      "subs": [
+        "Yavaş Sorgu/Rapor",
+        "Timeout",
+        "Yüksek Yük/Bellek",
+        "Arayüz Gecikmesi"
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Ortam / Altyapı",
+      "description": "Sunucu, ağ, donanım, OS, tarayıcı",
+      "typical_owner": "L1",
+      "subs": [
+        "Ağ/İnternet",
+        "Sunucu",
+        "Cihaz (Tablet/El Terminali)",
+        "OS/Tarayıcı",
+        "Disk/Bellek Doluluğu"
+      ]
+    },
+    {
+      "id": "process",
+      "name": "Süreç / İş Kuralı",
+      "description": "Süreç adımı atlandı veya iş kuralı çiğnendi",
+      "typical_owner": "L1",
+      "subs": ["Adım Atlandı", "İş Kuralı İhlali", "Onay Eksik", "Yanlış Sıralama"]
+    },
+    {
+      "id": "documentation",
+      "name": "Doküman/Bilgi Eksikliği",
+      "description": "Özellik var ama doküman/eğitim yetersiz",
+      "typical_owner": "L1",
+      "subs": ["Özellik Dokümantasız", "Eski Doküman", "Eğitim Materyali Eksik"]
+    },
+    {
+      "id": "feature-request",
+      "name": "Özellik Talebi",
+      "description": "Mevcut hata değil, yeni geliştirme isteği",
+      "typical_owner": "L2",
+      "subs": [
+        "Yeni Özellik",
+        "Mevcut İyileştirme",
+        "Arayüz İyileştirme",
+        "Yeni Rapor Şablonu"
+      ]
+    },
+    {
+      "id": "known-issue",
+      "name": "Bilinen Sorun",
+      "description": "Daha önce raporlanmış, workaround/fix mevcut",
+      "typical_owner": "L1",
+      "subs": [
+        "Geçici Çözüm Mevcut",
+        "Düzeltme Beklemede",
+        "Sonraki Sürümde Düzelecek"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Diğer",
+      "description": "Yukarıdakilerin hiçbiri tam uymuyorsa",
+      "typical_owner": "L1",
+      "subs": ["Sınıflandırılamadı", "Genel Bilgi Talebi"]
+    }
+  ]
+}

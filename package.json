@@ -1,0 +1,50 @@
+{
+  "name": "ticket-analiz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync:n4b": "node scripts/sync-n4b-cozumler.mjs && tsx scripts/ingest-kb.ts --n4b"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.97.0",
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@xenova/transformers": "^2.17.2",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^11.5.0",
+    "exceljs": "^4.4.0",
+    "iron-session": "^8.0.4",
+    "lucide-react": "^1.8.0",
+    "mammoth": "^1.12.0",
+    "mssql": "^12.5.2",
+    "next": "16.2.3",
+    "openai": "^6.38.0",
+    "pdf-parse": "^2.4.5",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sqlite-vec": "^0.1.9",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/mssql": "^9.1.7",
+    "@types/node": "^22.0.0",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

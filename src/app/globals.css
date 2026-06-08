@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/*
+ * Token paleti — warm-neutral surfaces, indigo accent, semantic feedback.
+ * Tailwind 4 @theme'i bu vars'ları utility class'lara (bg-/text-/border-)
+ * dönüştürür.
+ */
+@theme {
+  --color-bg: #fafaf9;
+  --color-surface: #ffffff;
+  --color-surface-2: #f5f5f4;
+  --color-surface-3: #ebebe9;
+
+  --color-border: #e7e5e4;
+  --color-border-strong: #d6d3d1;
+
+  --color-fg: #1c1917;
+  --color-fg-2: #44403c;
+  --color-muted: #78716c;
+  --color-muted-2: #a8a29e;
+
+  --color-accent: #6366f1;
+  --color-accent-hover: #4f46e5;
+  --color-accent-soft: #eef2ff;
+  --color-accent-fg: #ffffff;
+
+  --color-good: #16a34a;
+  --color-good-soft: #f0fdf4;
+  --color-warn: #d97706;
+  --color-warn-soft: #fffbeb;
+  --color-bad: #dc2626;
+  --color-bad-soft: #fef2f2;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+
+  --shadow-xs: 0 1px 1px rgba(28, 25, 23, 0.04);
+  --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.05), 0 1px 1px rgba(28, 25, 23, 0.03);
+  --shadow-md: 0 2px 4px rgba(28, 25, 23, 0.05), 0 4px 12px rgba(28, 25, 23, 0.04);
+  --shadow-lg: 0 4px 8px rgba(28, 25, 23, 0.04), 0 12px 32px rgba(28, 25, 23, 0.08);
+  --shadow-xl: 0 8px 16px rgba(28, 25, 23, 0.05), 0 24px 48px rgba(28, 25, 23, 0.12);
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 8px;
+  border: 2px solid var(--color-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-2);
+}

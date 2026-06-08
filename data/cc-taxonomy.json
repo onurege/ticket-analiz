@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "description": "Çağrı merkezi ticket kategorileri — ana + alt. LLM SADECE bu listeden seçer, yeni kategori uydurmaz.",
+  "categories": [
+    {
+      "id": "ebelge",
+      "name": "E-Belge",
+      "description": "E-Fatura, E-İrsaliye, E-Arşiv süreçleri",
+      "subs": [
+        "E-Fatura Gönderim",
+        "E-Arşiv",
+        "E-İrsaliye",
+        "GİB Entegrasyon",
+        "İptal/İade"
+      ]
+    },
+    {
+      "id": "tahsilat",
+      "name": "Tahsilat & POS",
+      "description": "Tahsilat süreçleri, SoftPos, sanal POS",
+      "subs": [
+        "Payneos SoftPos",
+        "ParamPOS",
+        "Banka Entegrasyon",
+        "Tahsilat Kaydı",
+        "Cari Eşleştirme"
+      ]
+    },
+    {
+      "id": "mobil",
+      "name": "Mobil Uygulama",
+      "description": "Android, iOS, el terminali sorunları",
+      "subs": [
+        "Android",
+        "iOS",
+        "El Terminali",
+        "Senkronizasyon",
+        "Saha Operasyon"
+      ]
+    },
+    {
+      "id": "web",
+      "name": "Web / Backoffice",
+      "description": "Panorama web arayüzü",
+      "subs": ["Login/Yetki", "Arayüz", "Performans", "Bildirim", "Genel UI"]
+    },
+    {
+      "id": "raporlama",
+      "name": "Raporlama & Dashboard",
+      "description": "Satış, tahsilat, hedef raporları",
+      "subs": [
+        "Satış Raporu",
+        "Tahsilat Raporu",
+        "MTD/YTD",
+        "Hedef/Performans",
+        "Dashboard"
+      ]
+    },
+    {
+      "id": "entegrasyon",
+      "name": "Entegrasyonlar",
+      "description": "Dış ERP / sistem entegrasyonları",
+      "subs": ["Logo", "Netsis", "Maya", "ERP Diğer", "API"]
+    },
+    {
+      "id": "tanim",
+      "name": "Tanımlar",
+      "description": "Müşteri, ürün, personel, kampanya tanımları",
+      "subs": [
+        "Müşteri Tanım",
+        "Ürün Tanım",
+        "Personel/Rut",
+        "Kampanya/İskonto",
+        "Genel Tanım"
+      ]
+    },
+    {
+      "id": "satis-surec",
+      "name": "Satış Süreci",
+      "description": "Sipariş, irsaliye, fatura, iade",
+      "subs": ["Sipariş", "İrsaliye", "Fatura", "İade", "Teklif"]
+    },
+    {
+      "id": "stok",
+      "name": "Stok & Depo",
+      "description": "Stok hareketi, depo, sayım",
+      "subs": ["Stok Hareketi", "Depo İşlemi", "Sayım", "Transfer", "Bakiye"]
+    },
+    {
+      "id": "kullanici",
+      "name": "Kullanıcı & Yetki",
+      "description": "Sistem kullanıcı yönetimi, parametreler",
+      "subs": ["Kullanıcı Yönetimi", "Yetki Tanımı", "Parametre", "Şube/Depo"]
+    },
+    {
+      "id": "veri-aktarim",
+      "name": "Veri & Aktarım",
+      "description": "Excel, toplu işlem, migration",
+      "subs": ["Excel Import/Export", "Toplu İşlem", "Migration", "Yedekleme"]
+    },
+    {
+      "id": "diger",
+      "name": "Diğer",
+      "description": "Yukarıdakilerin tam uymadığı kayıtlar",
+      "subs": [
+        "Genel Soru",
+        "Eğitim Talebi",
+        "İyileştirme Önerisi",
+        "Bilinmeyen"
+      ]
+    }
+  ]
+}

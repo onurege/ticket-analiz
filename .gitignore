@@ -1,0 +1,63 @@
+# ─── Bağımlılıklar ───────────────────────────────────────────────
+node_modules
+.pnp
+.pnp.js
+
+# ─── Next.js ─────────────────────────────────────────────────────
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── Çevre değişkenleri ──────────────────────────────────────────
+# .env.example her zaman commit edilir; .env asla.
+.env
+.env.local
+.env.*.local
+
+# ─── Loglar / OS / IDE ───────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/settings.example.json
+
+# ─── Geçici dosyalar ─────────────────────────────────────────────
+/tmp
+.scratch
+scripts/_*.mjs
+
+# ─── Veri klasörü ────────────────────────────────────────────────
+# Genel kural: çalışma anında ÜRETİLEN dosyalar push edilmez.
+#               Statik taksonomi ve referans dosyalar push edilir.
+
+# Lokal SQLite veritabanları (çok büyük, runtime üretilir, sync ile dolar)
+data/embeddings.sqlite
+data/embeddings.sqlite-shm
+data/embeddings.sqlite-wal
+data/ozet.sqlite
+data/ozet.sqlite-shm
+data/ozet.sqlite-wal
+
+# Müşteri verisi ve çalışma çıktıları (PII / hassas)
+data/customer-blocklist.json
+data/ticket-analysis/
+data/handoffs/
+data/reports/
+data/topics-v2/
+
+# Üretilen büyük asset'ler — gerektiğinde scriptlerle yeniden üretilir
+data/kb/pdfs/
+
+# ─── Commit EDİLEN veri dosyaları (referans için) ────────────────
+# data/cc-taxonomy.json         — eski v1 taksonomi
+# data/cc-taxonomy-v2.json      — v3 taksonomi (Excel kaynaklı)
+# data/cc-taxonomy-hints.json   — domain hint kuralları
+# data/cc-root-causes.json      — kök neden katalogu (v1)
+# data/panorama-docs/*.json     — Panorama ekran taksonomisi
+# data/solutions/*              — çözüm bankası
+# data/known-issues/*           — bilinen sorunlar (sentez)

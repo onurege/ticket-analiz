@@ -1,0 +1,110 @@
+{
+  "pattern": {
+    "title": "Master Tanım / Müşteri / Dist /Temsilci / Rut vb.",
+    "description": "Bu grupta 98 kayıt birikti (98 tanesi sentezde kullanıldı). 2026-05-13 → 2026-05-14 aralığında görüldü. En çok geçen projeler: JTI (18), Nestle (12), ÇAYKUR (8), MEY İÇKİ (7), Brown Forman (6).",
+    "characteristicPhrases": [
+      "univera center",
+      "center anadolu",
+      "no karsiyaka",
+      "univera center anadolu",
+      "this is",
+      "rica ediyoruz",
+      "tarihinde sunu",
+      "sunu yazdi",
+      "tarihinde sunu yazdi",
+      "univera bilgisayar",
+      "bilgisayar sistemleri",
+      "sistemleri merkez"
+    ]
+  },
+  "commonRootCause": "Master Tanım / Müşteri / Dist /Temsilci / Rut vb.",
+  "variants": [
+    {
+      "title": "Talep - EnRoute - Teknik Destek - Backoffice",
+      "description": "Bu varyantta 54 kayıt var. Geçen projeler: ÇAYKUR, La Lorraine, JTI, BEYLERBEYİ, MEY İÇKİ.",
+      "rootCause": "Alt eksen: Talep - EnRoute - Teknik Destek - Backoffice",
+      "indicativeBildirimNos": [
+        32518646,
+        32518563,
+        32518058,
+        32517242,
+        32516798
+      ]
+    },
+    {
+      "title": "Talep - EnRoute - İstek - Operatörlük İşlemi",
+      "description": "Bu varyantta 22 kayıt var. Geçen projeler: ÇAYKUR, Brown Forman, JTI, Mars, Weitnauer.",
+      "rootCause": "Alt eksen: Talep - EnRoute - İstek - Operatörlük İşlemi",
+      "indicativeBildirimNos": [
+        32514696,
+        32514481,
+        32511935,
+        32510654,
+        32510653
+      ]
+    },
+    {
+      "title": "Talep - EnRoute - İstek - Veritabanı İstekleri",
+      "description": "Bu varyantta 7 kayıt var. Geçen projeler: Brown Forman, JTI, ÇAYKUR, Doğuş Çay, Nestle.",
+      "rootCause": "Alt eksen: Talep - EnRoute - İstek - Veritabanı İstekleri",
+      "indicativeBildirimNos": [
+        32513951,
+        32511318,
+        32507295,
+        32505127,
+        32504881
+      ]
+    },
+    {
+      "title": "Soru - EnRoute - Fonksiyonellik",
+      "description": "Bu varyantta 4 kayıt var. Geçen projeler: ÇAYKUR, REDBULL, Doğuş Çay, JTI.",
+      "rootCause": "Alt eksen: Soru - EnRoute - Fonksiyonellik",
+      "indicativeBildirimNos": [
+        32514603,
+        32510974,
+        32499118,
+        32498527
+      ]
+    },
+    {
+      "title": "Soru - EnRoute - Arayüz",
+      "description": "Bu varyantta 3 kayıt var. Geçen projeler: Eczacıbaşı Profesyonel, UNIVERA BİLGİSAYAR SİSTEMLERİ SANAYİ VE TİCARET A.Ş., GSK.",
+      "rootCause": "Alt eksen: Soru - EnRoute - Arayüz",
+      "indicativeBildirimNos": [
+        32516124,
+        32499638,
+        32498051
+      ]
+    }
+  ],
+  "canonicalSolution": [
+    {
+      "step": "Müşteriler aktife alınmıştır , kontrol edebilirsiniz.",
+      "appliesTo": "all",
+      "evidence": "4 kayıtta gözlendi · örn. #32511935, #32510654, #32498360, #32497311"
+    },
+    {
+      "step": "Samsun için renklendirme tanımı yapılmıştır.",
+      "appliesTo": "all",
+      "evidence": "4 kayıtta gözlendi · örn. #32497986, #32497956, #32497954, #32497952"
+    },
+    {
+      "step": "Kullanıcıdan çıkış-giriş işlemi yaparak tekrar kontrol edebilir misiniz ?",
+      "appliesTo": "all",
+      "evidence": "2 kayıtta gözlendi · örn. #32515784, #32515111"
+    },
+    {
+      "step": "İşlem yapılan proje bilgisi sorulmuştu , proje bilgisi verebilirseniz işlemi kontrol edebiliriz.",
+      "appliesTo": "all",
+      "evidence": "2 kayıtta gözlendi · örn. #32507863, #32507785"
+    },
+    {
+      "step": "Görüşmemiz sonucunda yetkinin açıldığı bilgisi tarafıma iletilmiştir.",
+      "appliesTo": "all",
+      "evidence": "2 kayıtta gözlendi · örn. #32499638, #32498051"
+    }
+  ],
+  "edgeCases": [],
+  "preventiveSuggestions": [],
+  "coverageNote": "Bu sentez 98 kayıttan deterministik olarak üretildi. 91 tanesinde çözüm açıklaması mevcut. Cümleler Jaccard ≥ 0.55 ile kümelendi; en az 2 kayıtta gözlenen adımlar kanonik kabul edildi."
+}

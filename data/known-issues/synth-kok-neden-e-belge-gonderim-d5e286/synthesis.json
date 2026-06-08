@@ -1,0 +1,60 @@
+{
+  "pattern": {
+    "title": "E-Belge Gönderim",
+    "description": "Bu grupta 38 kayıt birikti (38 tanesi sentezde kullanıldı). 2026-05-13 → 2026-05-14 aralığında görüldü. En çok geçen projeler: Nestle (6), ŞÖLEN (6), Şen Piliç (4), JTI (4), Doğuş Çay (3).",
+    "characteristicPhrases": [
+      "belge gonderim",
+      "desteklerinizi rica",
+      "belge gonderimde",
+      "desteginizi rica",
+      "musterisi fatura",
+      "hata aliyorum",
+      "kodlu belge",
+      "fatura mukellefi",
+      "konu desteklerinizi",
+      "konu desteklerinizi rica",
+      "sorun yasayan",
+      "yasayan operator"
+    ]
+  },
+  "commonRootCause": "E-Belge Gönderim",
+  "variants": [
+    {
+      "title": "Talep - EnRoute - Teknik Destek - Backoffice",
+      "description": "Bu varyantta 28 kayıt var. Geçen projeler: Nestle, Doğuş Çay, ŞÖLEN, ÇAYKUR, HARIBO ŞEKERLEME SAN. TİC.LTD. ŞTİ..",
+      "rootCause": "Alt eksen: Talep - EnRoute - Teknik Destek - Backoffice",
+      "indicativeBildirimNos": [
+        32518830,
+        32518709,
+        32517192,
+        32516019,
+        32514317
+      ]
+    },
+    {
+      "title": "Hata - EnRoute - Fonksiyonel Hatalar (Sistem İşlevini Yerine Getirmiyor) - Hatalı Hesaplama-Veri Yanlışlığı - Backoffice",
+      "description": "Bu varyantta 4 kayıt var. Geçen projeler: Doğuş Çay, Nestle Waters(Erikli), HARIBO ŞEKERLEME SAN. TİC.LTD. ŞTİ., ŞÖLEN.",
+      "rootCause": "Alt eksen: Hata - EnRoute - Fonksiyonel Hatalar (Sistem İşlevini Yerine Getirmiyor) - Hatalı Hesaplama-Veri Yanlışlığı - Backoffice",
+      "indicativeBildirimNos": [
+        32501201,
+        32500961,
+        32500763,
+        32497793
+      ]
+    },
+    {
+      "title": "Hata - EnRoute - Performans ve Teknik Aksaklıklar (Hız & İstikrar) - Tutarsız Çalışma - Backoffice",
+      "description": "Bu varyantta 3 kayıt var. Geçen projeler: Nestle, JTI.",
+      "rootCause": "Alt eksen: Hata - EnRoute - Performans ve Teknik Aksaklıklar (Hız & İstikrar) - Tutarsız Çalışma - Backoffice",
+      "indicativeBildirimNos": [
+        32508050,
+        32503747,
+        32499910
+      ]
+    }
+  ],
+  "canonicalSolution": [],
+  "edgeCases": [],
+  "preventiveSuggestions": [],
+  "coverageNote": "Bu sentez 38 kayıttan deterministik olarak üretildi. 28 tanesinde çözüm açıklaması mevcut. Cümleler Jaccard ≥ 0.55 ile kümelendi; en az 2 kayıtta gözlenen adımlar kanonik kabul edildi."
+}
