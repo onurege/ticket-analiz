@@ -176,33 +176,41 @@ schtasks /Create /SC DAILY /ST 02:00 /TN "EnRouteEmbeddings" `
 
 Script idempotent — sadece eksik olanları embed eder.
 
-### Next4biz UI Entegrasyonu
+### EnRoute Destek "AI ile Önerle" Akışı
 
-Front-end ekibine ver — "AI ile Önerle" butonu:
+Knowledge Base'i kullanan "AI ile Önerle" butonu için endpoint:
 
 ```javascript
+// Operatör "AI ile Önerle" tıkladığında — müşteri metnini KB'ye gönder
 const r = await fetch('http://<server-ip>:4000/api/categorize', {
   method: 'POST',
   headers: {'Content-Type': 'application/json'},
   body: JSON.stringify({ text: musteriMetni })
 });
 const { labels, confidence, reasoning, similarExamples } = await r.json();
+// labels'ı 9 dropdown'a yerleştir, confidence göster
+// similarExamples'ı "benzer geçmiş vakalar" panelinde göster
 ```
 
-Kaydet anında feedback gönder:
+Operatör onaylayıp/düzeltip kaydettiğinde KB'yi besle:
 ```javascript
 await fetch('http://<server-ip>:4000/api/feedback', {
   method: 'POST',
   headers: {'Content-Type': 'application/json'},
   body: JSON.stringify({
     sourceText: musteriMetni,
-    aiSuggestion: aiOnerisi,
-    finalLabels: kullanicininKaydettigi,
+    aiSuggestion: aiOnerisi,            // AI'ın önerdiği etiketler
+    finalLabels: kullanicininKaydettigi, // operatörün son kararı
     wasCorrected: aiOnerisi !== kullanicininKaydettigi
   })
 });
-// Her kaydet → vector store büyür → sistem öğrenir
+// Her kaydet → KB büyür → sonraki "AI ile Önerle" daha doğru sonuç verir
 ```
+
+**KB nasıl iyileşir?**
+- Her feedback yeni "öğretmen örneği" → vector store'a eklenir
+- Sonraki ticket geldiğinde bu örnek de benzerlik araması için kullanılır
+- Aynı pattern bir kez doğru etiketlenince, sonrakileri de doğru yakalanır
 
 Frontend `web/dist/` Fastify static middleware'i üzerinden servis edilir
 (tek port: 4000). Reverse proxy / domain isteğe bağlı.
