@@ -61,3 +61,21 @@ data/kb/pdfs/
 # data/panorama-docs/*.json     — Panorama ekran taksonomisi
 # data/solutions/*              — çözüm bankası
 # data/known-issues/*           — bilinen sorunlar (sentez)
+
+# ─── App (EnRoute RAG) ────────────────────────────────────────────
+# Build çıktıları — npm run build ile yeniden üretilir
+app/server/dist/
+app/web/dist/
+
+# Cache + WAL — anonimleştirilmiş olsa bile müşteri verisi (PUBLIC repo)
+app/server/data/cache.sqlite
+app/server/data/cache.sqlite-shm
+app/server/data/cache.sqlite-wal
+
+# Dev/temp scriptleri (production'a gerekmez)
+app/server/scripts/*.bak
+app/server/scripts/seed-mock.mjs
+app/server/scripts/test-cat.mjs
+app/server/scripts/apply-v2.mjs
+app/server/scripts/apply-v3.mjs
+app/server/scripts/apply-manual.mjs

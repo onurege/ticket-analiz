@@ -1,0 +1,2662 @@
+[
+ {
+  "bildirim_no": 32730730,
+  "is_sureci": "Alış İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Verilen Sipariş",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yetki / Rol",
+  "kok_neden_detay": "İşlem yetkisi eksik",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32723079,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Basamıyorum",
+  "etkilenen_nesne": "Fatura Basım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yetki / Rol",
+  "kok_neden_detay": "Menü yetkisi eksik",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32723262,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Belge Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Belge dizaynı eksik / hatalı",
+  "cozum_tipi": "Dizayn düzeltme"
+ },
+ {
+  "bildirim_no": 32128392,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Unidox V1 / V2 geçişi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32717849,
+  "is_sureci": "Belge Dönüşüm İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Siparişten Belge Olusturma",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri / Veritabanı Hatası",
+  "kok_neden_detay": "Update ve insert işlemi",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32716501,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Toplu Fatura Basim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32702577,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Senkron olmuyor (veri gitmiyor)",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32695851,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Oluşturamıyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32695523,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Matbu / basım parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32678646,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "İade İrsaliyesi",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32687887,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 24,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "E-Belge Ayarları",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "E-Belge ayarı / entegratör şifresi",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 18,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "İade Faturası",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Elle müdahale / geçmiş veri",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32678634,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32679305,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Senkron olmuyor (veri gitmiyor)",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "E-Belge ayarı / entegratör şifresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 13,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 7,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 1,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32668610,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Kiymetli Evrak Takibi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Eksik kart ilişkisi (depo / sevk / seri)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32660874,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32654243,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "E-Belge ayarı / entegratör şifresi",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32653030,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Verilen Sipariş",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32653039,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Matbu no / sıra",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32644004,
+  "is_sureci": "Dinamik Rapor İşlemleri",
+  "islem_tipi": "Rapor alamıyorum",
+  "etkilenen_nesne": "Rapor",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32644246,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Ziyaret Izleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Kod hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32601004,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Matbu / basım parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32599720,
+  "is_sureci": "Sevkiyat / Dağıtım Araç Yükleme İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Hareket Tip",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32594024,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Senkron olmuyor (veri gelmiyor)",
+  "etkilenen_nesne": "Bilgi Alma",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32593605,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Eksik ilişki",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32592939,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Planlanmış Görev Sonuç",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Görev çalışmıyor (object reference)",
+  "cozum_tipi": "Ürün geliştirme"
+ },
+ {
+  "bildirim_no": 32555402,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "İade Faturası",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Mükerrer kayıt",
+  "cozum_tipi": "DLL Geçişi"
+ },
+ {
+  "bildirim_no": 32592806,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Bilgi Alma",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32587229,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Xslt Dizayn",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Belge dizaynı eksik / hatalı",
+  "cozum_tipi": "Dizayn düzeltme"
+ },
+ {
+  "bildirim_no": 32583843,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Hesaplama yanlış",
+  "etkilenen_nesne": "Fiyat Tanımlama",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Hesaplama / İş Kuralı",
+  "kok_neden_detay": "KDV / muafiyet",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580854,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32561883,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Irsaliye",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri / Veritabanı Hatası",
+  "kok_neden_detay": "Update ve insert işlemi",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32582946,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Yanlış parametre",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32577971,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "İade Faturası (Saglam)",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32568908,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Web Servis / Aktarım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Entegrasyon / Aktarım",
+  "kok_neden_detay": "Web servis / view hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580199,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Senkron olmuyor (veri gitmiyor)",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32580176,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32576710,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "İade Faturası (Saglam)",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32528914,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Fatura Baslik Düzeltme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32545377,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Matbu / basım parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32574414,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri Durum Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32729215,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Bakiye Dengeleme Borç",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32715252,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Saticiya İade Faturası",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32452270,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Unidox V1 / V2 geçişi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32722048,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri Durum Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32718625,
+  "is_sureci": "Veri Alma Aktarım işlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Veri Alma Excelden",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32716433,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Mobil Versiyon Güncelleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "Cihaz bağlantısı / eşleştirme",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32699574,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32693151,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32694819,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Elle müdahale / geçmiş veri",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32692729,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32685954,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 23,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "İade Faturası",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 17,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "E-Belge Ayarları",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32679950,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Nakit",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32678770,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 12,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-FaturaE-Irsaliye Alim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "XSLT şablon eksik",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 6,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Giriş / sunucu hatası",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32389744,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "İskonto Promosyon",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32665705,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32659726,
+  "is_sureci": "Dinamik Rapor İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Dinamik Raporlar",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 3265413,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Fatura Basım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "Cihaz bağlantısı / eşleştirme",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32653238,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Kaydedemiyorum",
+  "etkilenen_nesne": "Ziyaret Izleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Elle müdahale / geçmiş veri",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32641400,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32641603,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32622464,
+  "is_sureci": "Sevkiyat / Dağıtım Araç Yükleme İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Siparişten Araç Yükleme",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "E-Belge ayarı / entegratör şifresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32600716,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32599321,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Yönetim Hiyerarşisi 1",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32567086,
+  "is_sureci": "Planlanmış Görev işlemleri",
+  "islem_tipi": "Yavaş çalışıyor",
+  "etkilenen_nesne": "Planlanmış Görev",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "RAM / kaynak tüketimi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32593460,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32590129,
+  "is_sureci": "İş Akış İşlemleri",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "İskonto Promosyon Onaylama",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Giriş / sunucu hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32587019,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Unidox V1 / V2 geçişi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32592882,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Matbu no / sıra",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32582970,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Unidox V1 / V2 geçişi",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580244,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "E-Belge Ayarları",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32574601,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32575885,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32581737,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Entegrasyon / Aktarım",
+  "kok_neden_detay": "Eşleştirme eksik",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32581158,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Fatura İptal Nedeni",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Yasal süreç (8 gün / ay kapanışı)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580247,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Nakit",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32578188,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Fatura Baslik Düzeltme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Yasal süreç (8 gün / ay kapanışı)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32577362,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Fatura İptal Nedeni",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Yasal süreç (8 gün / ay kapanışı)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32568759,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Müşteri İptal",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Elle müdahale / geçmiş veri",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32527102,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Fatura Basım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "Cihaz bağlantısı / eşleştirme",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32545462,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32576904,
+  "is_sureci": "İskonto ve Promosyon",
+  "islem_tipi": "Oluşturamıyorum",
+  "etkilenen_nesne": "İskonto Promosyon",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32728511,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Kaydedemiyorum",
+  "etkilenen_nesne": "Rut İşlemleri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32726166,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32437166,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "İade Faturası",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32313935,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32706940,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32715999,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Yasal süreç (8 gün / ay kapanışı)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32699461,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32698491,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Online Güncellemeler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32695127,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Ayarları",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "E-Belge ayarı / entegratör şifresi",
+  "cozum_tipi": "Yetki düzenleme"
+ },
+ {
+  "bildirim_no": 32690095,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Satış Temsilcisi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32684132,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Belge Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Belge dizaynı eksik / hatalı",
+  "cozum_tipi": "Dizayn düzeltme"
+ },
+ {
+  "bildirim_no": 22,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Kaydedemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 16,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32680154,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32358536,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 11,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "GİB / Schematron hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 5,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32660540,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Mobil Versiyon Güncelleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "APK versiyon uyumsuz",
+  "cozum_tipi": "Versiyon geçişi"
+ },
+ {
+  "bildirim_no": 32666374,
+  "is_sureci": "Alış İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "İrsaliye İş Bildirimi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32508661,
+  "is_sureci": "Sevkiyat / Dağıtım Araç Yükleme İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Siparişten Araç Yükleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "APK versiyon uyumsuz",
+  "cozum_tipi": "Ürün geliştirme"
+ },
+ {
+  "bildirim_no": 32654278,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri Durum Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32642078,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Ayarları",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32647713,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Yetki ve Parametre Şablon",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32640031,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32574211,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Qlik Raporlama",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "Entegrasyon / Aktarım",
+  "kok_neden_detay": "Web servis / view hatası",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32600172,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Tahsilat Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32599323,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri Durum Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32596580,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32595092,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32588519,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Validasyon hatası",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32582572,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32592841,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Yavaş çalışıyor",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32585791,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Toplu Müşteri Degerleri Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32586134,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Verilen Hizmet Faturası",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri / Veritabanı Hatası",
+  "kok_neden_detay": "Update ve insert işlemi",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32545052,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "İrsaliye",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Elle müdahale / geçmiş veri",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32582664,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32581906,
+  "is_sureci": "İskonto ve Promosyon",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "İskonto Promosyon",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32581301,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Senkron olmuyor (veri gelmiyor)",
+  "etkilenen_nesne": "Bilgi Alma",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32565173,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580218,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Xslt Dizayn",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Dizayn düzeltme"
+ },
+ {
+  "bildirim_no": 32573958,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Ürün / Stok Kartı",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32525941,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "GİB / Schematron hatası",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32531611,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32546856,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32728198,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Tanımlamalar",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32718264,
+  "is_sureci": "Sevkiyat / Dağıtım Araç Yükleme İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Dagitici",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Eksik ilişki",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32442285,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "GİB / Schematron hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32721079,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32718048,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32715271,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Yanlış parametre",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32699263,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32685375,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Senkron olmuyor (veri gitmiyor)",
+  "etkilenen_nesne": "Yetki ve Parametre Sablon",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Eksik parametre",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32693750,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32689923,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32685936,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 21,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32663557,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Dosya indiremiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32679971,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32671096,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 10,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 4,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32672088,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32665922,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32529335,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "İade Faturası",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Versiyon uyumsuzluğu (Fix-DLL)",
+  "cozum_tipi": "DLL Geçişi"
+ },
+ {
+  "bildirim_no": 32653666,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32652949,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Tanımlamalar",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32640067,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Mobil Versiyon Güncelleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "APK versiyon uyumsuz",
+  "cozum_tipi": "Versiyon geçişi"
+ },
+ {
+  "bildirim_no": 32628867,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32602646,
+  "is_sureci": "Ürün Kartı ve Grup İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Ürün / Stok Kartı",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Eksik kart ilişkisi (depo / sevk / seri)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32580246,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Hesaplama yanlış",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32595811,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32553536,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Fatura Gecikme Günü Hesaplama",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32595017,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Aktarım (SmartConnect) parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32568406,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32592897,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32588978,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Rapor",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32503290,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32567386,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Rapor Bilgilendirme Tanım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32420927,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Aktarım Hatası alıyorum (Web servis)",
+  "etkilenen_nesne": "Web Servis / Aktarım",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Entegrasyon / Aktarım",
+  "kok_neden_detay": "Web servis / view hatası",
+  "cozum_tipi": "Ürün geliştirme"
+ },
+ {
+  "bildirim_no": 32554567,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32570155,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "E-Belge Ayarları",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580570,
+  "is_sureci": "Ürün Kartı ve Grup İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Satış Temsilcisi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580289,
+  "is_sureci": "Sevkiyat / Dağıtım Araç Yükleme İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Siparişten Araç Yükleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32570547,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "Satış Temsilcisi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32558531,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32505905,
+  "is_sureci": "Stok İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Stok İşlemleri",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32417913,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32551438,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Kod hatası",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32726364,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32718457,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yetki / Rol",
+  "kok_neden_detay": "Onay yetkisi yok",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32722530,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32307271,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "XSLT şablon eksik",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32716777,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "İrsaliye",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Validasyon hatası",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32687393,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Onaya düşmüyor",
+  "etkilenen_nesne": "Verilen Sipariş",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32696209,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32695723,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "İrsaliye",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32693728,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Matbu / basım parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32688457,
+  "is_sureci": "Alış İşlemleri",
+  "islem_tipi": "Oluşturamıyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32680376,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Hesaplama yanlış",
+  "etkilenen_nesne": "Fatura Gecikme Günü Hesaplama",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Hesaplama / İş Kuralı",
+  "kok_neden_detay": "Gecikme / kredi limiti",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 20,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32680684,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Belge Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Belge dizaynı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32679910,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Matbu / basım parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 15,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Mükerrer kayıt",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 9,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Dizaynı",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "XSLT şablon eksik",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 3,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32671610,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32665586,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Oluşturamıyorum",
+  "etkilenen_nesne": "Müşteri Durum Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32654610,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Matbu / basım parametresi",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32653669,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32653235,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "ERP (Logo, SAP vb.)",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32645858,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Satış Temsilcisi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32645852,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Belge Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Belge dizaynı eksik / hatalı",
+  "cozum_tipi": "Dizayn düzeltme"
+ },
+ {
+  "bildirim_no": 32603109,
+  "is_sureci": "İskonto ve Promosyon",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "İskonto Promosyon",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Hesaplama / İş Kuralı",
+  "kok_neden_detay": "İskonto / promosyon",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32600183,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32594252,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Toplu Müşteri Degerleri Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Yetki / Rol",
+  "kok_neden_detay": "Menü yetkisi eksik",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32574717,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32587259,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Depo",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Entegrasyon / Aktarım",
+  "kok_neden_detay": "Eşleştirme eksik",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32593233,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Satış Temsilcisi",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32592784,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Yasal süreç (8 gün / ay kapanışı)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32588518,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Rapor",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32526140,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32581260,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Bağlantı Bilgileri",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Giriş / sunucu hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32567325,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Disk / temp yetersizliği",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32555794,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Yazılım Hatası",
+  "kok_neden_detay": "Versiyon uyumsuzluğu (Fix-DLL)",
+  "cozum_tipi": "DLL Geçişi"
+ },
+ {
+  "bildirim_no": 32581940,
+  "is_sureci": "Yetki Parametre ve Çalışma parametreleri İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32580292,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Hesaplama / İş Kuralı",
+  "kok_neden_detay": "Gecikme / kredi limiti",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32577914,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Veri / Veritabanı Hatası",
+  "kok_neden_detay": "Update ve insert işlemi",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32569429,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Nakit",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32577855,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "ERP (Logo, SAP vb.)",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32572975,
+  "is_sureci": "Web Servis Entegrasyon / Aktarım",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Web Servis / Aktarım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32436954,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Mobil Versiyon Güncelleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "APK versiyon uyumsuz",
+  "cozum_tipi": "Versiyon geçişi"
+ },
+ {
+  "bildirim_no": 32534694,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Eksik ilişki",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32721819,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "ERP (Logo, SAP vb.)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32724115,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Matbu no / sıra",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32152327,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32718633,
+  "is_sureci": "Smart Connect İşlemleri",
+  "islem_tipi": "Aktaramıyorum (muhasebeye / ticari pakete)",
+  "etkilenen_nesne": "Ticari Pakete Aktarim",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32715355,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Fatura Baslik Düzeltme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Yanlış parametre",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32715240,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32698942,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Yasal süreç (8 gün / ay kapanışı)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32695970,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32692978,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Mükerrer kayıt",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32655925,
+  "is_sureci": "İade İşlemleri",
+  "islem_tipi": "Rapor alamıyorum",
+  "etkilenen_nesne": "Saticiya İade Faturası",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32685718,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "Satış Temsilcisi Parametreler",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "ST parametresi eksik",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 19,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Tutar yanlış",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör servis / şifre / kontör",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32680495,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Saticiya İade Faturası",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32676773,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Fatura Basım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Yazıcı / logo basım ayarı",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 14,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 8,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Irsaliye",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Entegratör kuyruk gecikmesi",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 2,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "E-Belge / Entegratör (3. parti)",
+  "kok_neden_detay": "Mükellefiyet / sertifika",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32668926,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32661139,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Hareket Tip",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Parametre / Konfigürasyon",
+  "kok_neden_detay": "Eksik parametre",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32656222,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Giremiyorum",
+  "etkilenen_nesne": "Ziyaret Izleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Hesaplama / İş Kuralı",
+  "kok_neden_detay": "İskonto / promosyon",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32653624,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Bilgi alabilir miyim",
+  "etkilenen_nesne": "Mobil Versiyon Güncelleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32653064,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "Rut Tanım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Satış temsilcisi tanımı hatalı",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32646517,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "Cihaz tarih / saat",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32629949,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Matbu No",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Matbu no / sıra",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32577026,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Rapor yanlış geliyor",
+  "etkilenen_nesne": "Rapor",
+  "etki": "Tüm kullanıcılar / distribütör etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Replikasyon durması",
+  "cozum_tipi": "Entegratör / servis müdahalesi"
+ },
+ {
+  "bildirim_no": 32580606,
+  "is_sureci": "Sabit Rapor ve Dashboard İşlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Rapor",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Mükerrer kayıt",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32596788,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Ziyaret Izleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri / Veritabanı Hatası",
+  "kok_neden_detay": "Update ve insert işlemi",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32595924,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Kaydedemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32593795,
+  "is_sureci": "Belge Basım İşlemleri",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "Fatura Basım",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Yazıcı / logo basım ayarı",
+  "cozum_tipi": "Parametre düzeltme"
+ },
+ {
+  "bildirim_no": 32577085,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "E-Belge gönderemiyorum",
+  "etkilenen_nesne": "Müşteri / Cari Kartı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Ana Veri / Kart Tanımı",
+  "kok_neden_detay": "Müşteri kartı eksik / hatalı",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32592926,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Nakit",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32588154,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Yavaş çalışıyor",
+  "etkilenen_nesne": "İşlemler",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580777,
+  "is_sureci": "E-Belge (e-fatura / e-arşiv)",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "E-Belge Gönderim",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Kullanıcı işlem adımı hatası",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580197,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Kaydedemiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Yetki / Rol",
+  "kok_neden_detay": "Lisans limiti dolu",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32583605,
+  "is_sureci": "Müşteri / Cari Kartı ve Gruplama İşlemleri",
+  "islem_tipi": "Güncelleyemiyorum",
+  "etkilenen_nesne": "Müşteri Durum Değiştirme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32583234,
+  "is_sureci": "Belge Dizaynı / Matbu",
+  "islem_tipi": "Yazdıramıyorum",
+  "etkilenen_nesne": "E-Belge Dizaynı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Dizayn / Matbu / Baskı",
+  "kok_neden_detay": "Belge dizaynı eksik / hatalı",
+  "cozum_tipi": "Dizayn düzeltme"
+ },
+ {
+  "bildirim_no": 32581759,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Bilgi Alamıyorum",
+  "etkilenen_nesne": "Bilgi Alma",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Sunucu / Altyapı / Performans",
+  "kok_neden_detay": "Yavaşlık / timeout (internet)",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32580631,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32576191,
+  "is_sureci": "Kullanıcı / Yetki / Giriş",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Kullanıcı",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri / Veritabanı Hatası",
+  "kok_neden_detay": "Update ve insert işlemi",
+  "cozum_tipi": "Script çalıştırma (DbUpdate)"
+ },
+ {
+  "bildirim_no": 32567068,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Bilgi gönderemiyorum",
+  "etkilenen_nesne": "Bilgi Gönderme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Veri Tutarsızlığı",
+  "kok_neden_detay": "Bozuk kayıt (stok tipi / belge detayı)",
+  "cozum_tipi": "Veri / kart düzeltme"
+ },
+ {
+  "bildirim_no": 32555717,
+  "is_sureci": "İskonto ve Promosyon",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "İskonto Promosyon",
+  "etki": "Bazı işlemler etkileniyor",
+  "kok_neden_grup": "Hesaplama / İş Kuralı",
+  "kok_neden_detay": "İskonto / promosyon",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32552575,
+  "is_sureci": "Finans Tahsilat İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Çek",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Bilgi / nasıl yapılır",
+  "cozum_tipi": "Bilgilendirme"
+ },
+ {
+  "bildirim_no": 32572433,
+  "is_sureci": "Satış Ekibi / Rut ve Ziyaret işlemleri",
+  "islem_tipi": "Hata mesajı alıyorum",
+  "etkilenen_nesne": "Mobil Versiyon Güncelleme",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Cihaz / Mobil Ortam",
+  "kok_neden_detay": "APK versiyon uyumsuz",
+  "cozum_tipi": "Versiyon geçişi"
+ },
+ {
+  "bildirim_no": 32451169,
+  "is_sureci": "Satış İşlemleri",
+  "islem_tipi": "Düzeltemiyorum",
+  "etkilenen_nesne": "Fatura",
+  "etki": "Tek kullanıcı etkileniyor",
+  "kok_neden_grup": "Kullanım / Eğitim",
+  "kok_neden_detay": "Operatörlük / merkez onayı gereken işlem",
+  "cozum_tipi": "Bilgilendirme"
+ }
+]

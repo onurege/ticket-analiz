@@ -1,0 +1,267 @@
+{
+  "version": "v3",
+  "description": "Akış diyagramı bazlı yeniden tasarım: Müşteri Problemi → Kategori → Nesne → Platform → İşlem Tipi → Kök Neden → Çözüm. Self-servis önerisi için optimize.",
+  "_design_notes": {
+    "akis": [
+      "1. Müşteri problemi (text, free)",
+      "2. Kategori (is_sureci) — 15 ana modül",
+      "3. Etkilendiği işlem (etkilenen_nesne) — 30 nesne",
+      "4. Platform — 4 platform (YENİ)",
+      "5. Müşteri problem tipi (islem_tipi) — 15 eylem-bazlı fiil",
+      "6. Etki (3 seviye)",
+      "7. Kök Neden Grup + Detay",
+      "8. Çözüm Tipi",
+      "9. Self-Servis mümkün mü (YENİ — bool)"
+    ]
+  },
+  "kategori": {
+    "label": "Kategori (İş Süreci)",
+    "description": "Müşterinin çalıştığı büyük modül",
+    "values": [
+      "Müşteri / Cari İşlemleri",
+      "Ürün / Stok İşlemleri",
+      "Sipariş / Satış İşlemleri",
+      "Alış İşlemleri",
+      "İade İşlemleri",
+      "E-Belge İşlemleri",
+      "Belge Basım / Dizayn",
+      "Tahsilat / Ödeme",
+      "Kullanıcı / Yetki Yönetimi",
+      "Satış Ekibi / Rut / Ziyaret",
+      "Raporlama / Dashboard",
+      "Aktarım / SmartConnect",
+      "İskonto / Promosyon / Fiyat",
+      "Sevkiyat / Stok / Depo",
+      "Sözleşme / Hedef / Prim"
+    ]
+  },
+  "etkilenen_nesne": {
+    "label": "Etkilendiği İşlem (Nesne)",
+    "description": "Hangi nesne / entity üzerinde sorun var",
+    "values": [
+      "Müşteri / Cari Kartı",
+      "Ürün / Stok Kartı",
+      "Fiyat Listesi",
+      "Sipariş",
+      "Satış Faturası",
+      "Alış Faturası",
+      "İade Faturası",
+      "İrsaliye",
+      "E-Fatura",
+      "E-Arşiv",
+      "Matbu / Seri No",
+      "Belge Dizaynı",
+      "Tahsilat",
+      "Kredi Kartı / POS",
+      "Banka / EFT / Havale",
+      "Çek / Senet",
+      "Kullanıcı / Şifre",
+      "Yetki / Rol",
+      "Lisans",
+      "Satış Temsilcisi",
+      "Rut / Ziyaret",
+      "Rapor",
+      "Dashboard",
+      "SmartConnect / Aktarım",
+      "İskonto / Promosyon",
+      "Depo / Stok Yeri",
+      "Sevkiyat",
+      "Sözleşme / Hedef",
+      "Cihaz / Mobil",
+      "Diğer"
+    ]
+  },
+  "platform": {
+    "label": "Platform",
+    "description": "Müşteri hangi platformda çalışıyor (YENİ alan — self-servis önerisi için kritik)",
+    "values": [
+      "Backoffice",
+      "Mobil",
+      "El Terminali",
+      "Unidox / 3.Parti Portal"
+    ]
+  },
+  "islem_tipi": {
+    "label": "Müşteri Problem Tipi (İşlem)",
+    "description": "Müşterinin yapmaya çalıştığı eylem — fiil bazlı, net",
+    "values": [
+      "Oluşturma / Kayıt",
+      "Görüntüleme / Sorgu",
+      "Güncelleme / Düzeltme",
+      "İptal Etme / Silme",
+      "Onaylama",
+      "E-Belge Gönderme",
+      "Aktarma (Ticari Pakete)",
+      "Yazdırma / Basım",
+      "Bilgi Gönderme (Mobil Senkron)",
+      "Bilgi Alma (Mobil Senkron)",
+      "Giriş / Bağlanma",
+      "Rapor Alma",
+      "Hesaplama / Tutar Kontrolü",
+      "Bilgilendirme Talebi",
+      "Hata Aldım"
+    ]
+  },
+  "etki": {
+    "label": "Etki",
+    "description": "Sorunun kapsamı",
+    "values": [
+      "İş tamamen durdu",
+      "Tüm kullanıcılar / distribütör etkileniyor",
+      "Tek kullanıcı etkileniyor"
+    ]
+  },
+  "kok_neden_groups": [
+    {
+      "group": "Kullanım / Eğitim",
+      "details": [
+        "Bilgi / nasıl yapılır",
+        "Kullanıcı işlem adımı hatası",
+        "Yasal süreç (8 gün / ay kapanışı)",
+        "Operatörlük / merkez onayı gereken işlem"
+      ]
+    },
+    {
+      "group": "E-Belge / Entegratör (3. parti)",
+      "details": [
+        "Entegratör servis / şifre / kontör",
+        "Mükellefiyet / sertifika",
+        "XSLT şablon eksik",
+        "GİB / Schematron hatası",
+        "Entegratör kuyruk gecikmesi",
+        "Unidox V1 / V2 geçişi"
+      ]
+    },
+    {
+      "group": "Ana Veri / Kart Tanımı",
+      "details": [
+        "Müşteri kartı eksik / hatalı",
+        "Ürün / stok kartı eksik",
+        "Fiyat / KDV tanımı hatalı",
+        "Satış temsilcisi tanımı hatalı",
+        "Eksik kart ilişkisi (depo / sevk / seri)"
+      ]
+    },
+    {
+      "group": "Parametre / Konfigürasyon",
+      "details": [
+        "E-Belge ayarı / entegratör şifresi",
+        "Aktarım (SmartConnect) parametresi",
+        "Matbu / basım parametresi",
+        "ST parametresi eksik",
+        "Yanlış parametre",
+        "Eksik parametre"
+      ]
+    },
+    {
+      "group": "Yetki / Rol",
+      "details": [
+        "Menü yetkisi eksik",
+        "İşlem yetkisi eksik",
+        "Distribütör / şube yetkisi eksik",
+        "Onay yetkisi yok",
+        "Lisans limiti dolu",
+        "Rol / kullanıcı tanımsız"
+      ]
+    },
+    {
+      "group": "Veri Tutarsızlığı",
+      "details": [
+        "Bozuk kayıt (stok tipi / belge detayı)",
+        "Mükerrer kayıt",
+        "Eksik ilişki",
+        "Elle müdahale / geçmiş veri"
+      ]
+    },
+    {
+      "group": "Dizayn / Matbu / Baskı",
+      "details": [
+        "Belge dizaynı eksik / hatalı",
+        "Matbu no / sıra",
+        "Yazıcı / logo basım ayarı"
+      ]
+    },
+    {
+      "group": "Sunucu / Altyapı / Performans",
+      "details": [
+        "Yavaşlık / timeout (internet)",
+        "Disk / temp yetersizliği",
+        "RAM / kaynak tüketimi",
+        "Replikasyon durması",
+        "Giriş / sunucu hatası",
+        "Sql Server DB sorunu"
+      ]
+    },
+    {
+      "group": "Cihaz / Mobil Ortam",
+      "details": [
+        "APK versiyon uyumsuz",
+        "Cihaz bağlantısı / eşleştirme",
+        "Dosya indirilemiyor",
+        "Cihaz tarih / saat"
+      ]
+    },
+    {
+      "group": "Yazılım Hatası",
+      "details": [
+        "Görev çalışmıyor (object reference)",
+        "Versiyon uyumsuzluğu (Fix-DLL)",
+        "Validasyon hatası",
+        "Kod hatası"
+      ]
+    },
+    {
+      "group": "Hesaplama / İş Kuralı",
+      "details": [
+        "İskonto / promosyon",
+        "Fiyat",
+        "KDV / muafiyet",
+        "Gecikme / kredi limiti"
+      ]
+    },
+    {
+      "group": "Entegrasyon / Aktarım",
+      "details": [
+        "Eşleştirme eksik",
+        "Web servis / view hatası",
+        "Servis timeout",
+        "Alan eşleşmesi hatalı"
+      ]
+    },
+    {
+      "group": "Veri / Veritabanı Hatası",
+      "details": [
+        "Update ve insert işlemi",
+        "Eksik/Hatalı Master Data (Ürün, Müşteri, Fiyat Listesi)"
+      ]
+    }
+  ],
+  "cozum_tipi": {
+    "label": "Çözüm Tipi",
+    "description": "Operatörün uyguladığı çözüm",
+    "values": [
+      "Bilgilendirme",
+      "Self-Servis Yönlendirmesi",
+      "Parametre düzeltme",
+      "Yetki düzenleme",
+      "Veri / kart düzeltme",
+      "Script çalıştırma (DbUpdate)",
+      "Entegratör / servis müdahalesi",
+      "Dizayn düzeltme",
+      "DLL Geçişi",
+      "Versiyon geçişi",
+      "Eğitim",
+      "Doküman / SSS",
+      "Ürün geliştirme"
+    ]
+  },
+  "self_servis_mumkun": {
+    "label": "Self-Servis Mümkün mü?",
+    "description": "Müşteri bunu kendi platformunda kendisi yapabilir miydi? (Hedef: bu evet olanları kullanıcıya yönlendirip operatör yükü azalt)",
+    "values": [
+      "Evet — kullanıcı kendi yapabilirdi",
+      "Hayır — operatör müdahalesi gerekiyor",
+      "Kısmi — bilgi/yönlendirmeyle yapabilir"
+    ]
+  }
+}
