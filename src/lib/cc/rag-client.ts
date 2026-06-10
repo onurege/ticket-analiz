@@ -70,39 +70,61 @@ const ETKI_V3_TO_V2: Record<string, string> = {
   "Tek kullanıcı etkileniyor": "Tek kullanıcı etkileniyor",
 };
 
-/** v3 etkilenen_nesne → v2 etkilenen_nesne (v2 218 değer; en yakın eşleşmeyi bul) */
-const ETKILENEN_NESNE_V3_TO_V2_MAP: Record<string, string> = {
-  "Müşteri / Cari Kartı": "Müşteri Kartı",
-  "Ürün / Stok Kartı": "Ürün Kartı",
-  "Fiyat Listesi": "Fiyat Listesi",
-  "Sipariş": "Sipariş",
-  "Satış Faturası": "Satış Faturası",
-  "Alış Faturası": "Alış Faturası",
-  "İade Faturası": "İade Faturası",
-  "İrsaliye": "İrsaliye",
-  "E-Fatura": "E-Fatura",
-  "E-Arşiv": "E-Arşiv",
-  "Matbu / Seri No": "Matbu No",
-  "Belge Dizaynı": "Belge Dizaynı",
-  "Tahsilat": "Tahsilat",
-  "Kredi Kartı / POS": "Kredi Kartı",
-  "Banka / EFT / Havale": "Banka",
-  "Çek / Senet": "Çek",
-  "Kullanıcı / Şifre": "Kullanıcı",
-  "Yetki / Rol": "Yetki",
-  "Lisans": "Lisans",
-  "Satış Temsilcisi": "Satış Temsilcisi",
-  "Rut / Ziyaret": "Rut",
-  "Rapor": "Rapor",
-  "Dashboard": "Dashboard",
-  "SmartConnect / Aktarım": "Smart Connect",
-  "İskonto / Promosyon": "İskonto",
-  "Depo / Stok Yeri": "Depo",
-  "Sevkiyat": "Sevkiyat",
-  "Sözleşme / Hedef": "Sözleşme",
-  "Cihaz / Mobil": "Mobil Cihaz",
-  "Diğer": "Diğer",
-};
+/**
+ * v3 etkilenen_nesne → v2 etkilenen_nesne — CONTEXT-AWARE.
+ *
+ * v2'de 218 değer var (çok detaylı, ekran/işlem adları). v3 sadece 30 yüksek
+ * seviye nesne döndürür. Doğru eşleştirme için işlem_tipi'ne BAKMAK ŞART.
+ *
+ * Örnek: v3 "E-Fatura" tek başına anlamsız, çünkü v2'de "E-Fatura" yok.
+ * Ama bağlamına göre:
+ *   - İşlem "E-Belge Gönderme" → "E-Belge Gönderim"
+ *   - İşlem "Yazdırma / Basım" → "E-Belge Dizaynı"
+ *   - İşlem "Görüntüleme" → "E-Belge Gönderim" (default — listeleme buradan yapılır)
+ */
+function mapEtkilenenNesneContext(v3Nesne: string, v3IslemTipi: string): string | null {
+  // E-Belge ailesi — bağlama göre rafine et
+  if (v3Nesne === "E-Fatura" || v3Nesne === "E-Arşiv") {
+    if (v3IslemTipi === "E-Belge Gönderme") return "E-Belge Gönderim";
+    if (v3IslemTipi === "Yazdırma / Basım") return "E-Belge Dizaynı";
+    if (v3IslemTipi === "Görüntüleme / Sorgu") return "E-Belge Gönderim";
+    if (v3IslemTipi === "Güncelleme / Düzeltme") return "E-Belge Ayarları";
+    return "E-Belge Gönderim"; // default
+  }
+
+  // Diğer nesneler — düz mapping
+  const directMap: Record<string, string> = {
+    "Müşteri / Cari Kartı": "Müşteri Kartı",
+    "Ürün / Stok Kartı": "Ürün Kartı",
+    "Fiyat Listesi": "Fiyat Listesi",
+    "Sipariş": "Sipariş",
+    "Satış Faturası": "Satış Faturası",
+    "Alış Faturası": "Alış Faturası",
+    "İade Faturası": "İade Faturası",
+    "İrsaliye": "İrsaliye",
+    "Matbu / Seri No": "Matbu No",
+    "Belge Dizaynı": "Belge Dizaynı",
+    "Tahsilat": "Tahsilat",
+    "Kredi Kartı / POS": "Kredi Kartı",
+    "Banka / EFT / Havale": "Banka",
+    "Çek / Senet": "Çek",
+    "Kullanıcı / Şifre": "Kullanıcı",
+    "Yetki / Rol": "Yetki",
+    "Lisans": "Lisans",
+    "Satış Temsilcisi": "Satış Temsilcisi",
+    "Rut / Ziyaret": "Rut",
+    "Rapor": "Rapor",
+    "Dashboard": "Dashboard",
+    "SmartConnect / Aktarım": "Smart Connect",
+    "İskonto / Promosyon": "İskonto",
+    "Depo / Stok Yeri": "Depo",
+    "Sevkiyat": "Sevkiyat",
+    "Sözleşme / Hedef": "Sözleşme",
+    "Cihaz / Mobil": "Mobil Cihaz",
+    "Diğer": "Diğer",
+  };
+  return directMap[v3Nesne] ?? null;
+}
 
 /** Ürün — v3'te henüz alan yok, metinden tahmin et veya default EnRoute */
 function guessUrun(text: string): "EnRoute" | "Quest" | "Stokbar" | "Calldesk" {
@@ -182,7 +204,7 @@ export function mapV3ToV2(rag: RagResponse, sourceText: string): V2MappedResult 
     platform: PLATFORM_V3_TO_V2[v3.platform] ?? null,
     is_sureci: KATEGORI_TO_IS_SURECI[v3.kategori] ?? null,
     islem_tipi: ISLEM_TIPI_V3_TO_V2[v3.islem_tipi] ?? null,
-    etkilenen_nesne: ETKILENEN_NESNE_V3_TO_V2_MAP[v3.etkilenen_nesne] ?? v3.etkilenen_nesne,
+    etkilenen_nesne: mapEtkilenenNesneContext(v3.etkilenen_nesne, v3.islem_tipi),
     etki: ETKI_V3_TO_V2[v3.etki] ?? "Tek kullanıcı etkileniyor",
     confidence: rag.confidence,
     reasoning: rag.reasoning,
