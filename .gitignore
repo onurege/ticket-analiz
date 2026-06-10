@@ -64,18 +64,18 @@ data/kb/pdfs/
 
 # ─── App (EnRoute RAG) ────────────────────────────────────────────
 # Build çıktıları — npm run build ile yeniden üretilir
-app/server/dist/
-app/web/dist/
+enroute-rag/server/dist/
+enroute-rag/web/dist/
 
 # Cache + WAL — anonimleştirilmiş olsa bile müşteri verisi (PUBLIC repo)
-app/server/data/cache.sqlite
-app/server/data/cache.sqlite-shm
-app/server/data/cache.sqlite-wal
+enroute-rag/server/data/cache.sqlite
+enroute-rag/server/data/cache.sqlite-shm
+enroute-rag/server/data/cache.sqlite-wal
 
 # Dev/temp scriptleri (production'a gerekmez)
-app/server/scripts/*.bak
-app/server/scripts/seed-mock.mjs
-app/server/scripts/test-cat.mjs
-app/server/scripts/apply-v2.mjs
-app/server/scripts/apply-v3.mjs
-app/server/scripts/apply-manual.mjs
+enroute-rag/server/scripts/*.bak
+enroute-rag/server/scripts/seed-mock.mjs
+enroute-rag/server/scripts/test-cat.mjs
+enroute-rag/server/scripts/apply-v2.mjs
+enroute-rag/server/scripts/apply-v3.mjs
+enroute-rag/server/scripts/apply-manual.mjs

@@ -33,7 +33,7 @@ kategorize, ve drill-down detay görüntüleme.
 ## Klasör yapısı
 
 ```
-app/
+enroute-rag/
 ├── README.md
 ├── .env.example
 ├── server/
@@ -83,13 +83,13 @@ app/
 ### 1. Bağımlılıklar
 
 ```bash
-cd app/server && npm install
+cd enroute-rag/server && npm install
 cd ../web && npm install
 ```
 
 ### 2. Ortam değişkenleri
 
-`app/.env.example` → `app/server/.env` kopyala:
+`enroute-rag/.env.example` → `enroute-rag/server/.env` kopyala:
 
 ```bash
 cp .env.example server/.env
@@ -100,10 +100,10 @@ cp .env.example server/.env
 
 ```bash
 # Terminal 1 — backend (port 4000)
-cd app/server && npm run dev
+cd enroute-rag/server && npm run dev
 
 # Terminal 2 — frontend (port 5173)
-cd app/web && npm run dev
+cd enroute-rag/web && npm run dev
 ```
 
 İlk açılışta ingestor MSSQL'den son 90 günü çekip kategorize eder
@@ -171,7 +171,7 @@ Ingestor 5dk'da bir N4B'den yeni ticket çeker, **embedding otomatik alınmaz**.
 Windows Task Scheduler ile gece 02:00'de embed et:
 ```powershell
 schtasks /Create /SC DAILY /ST 02:00 /TN "EnRouteEmbeddings" `
-  /TR "node C:\enroute-rag\app\server\scripts\bootstrap-embeddings.mjs"
+  /TR "node C:\enroute-rag\enroute-rag\server\scripts\bootstrap-embeddings.mjs"
 ```
 
 Script idempotent — sadece eksik olanları embed eder.
