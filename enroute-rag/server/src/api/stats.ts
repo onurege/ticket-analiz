@@ -23,8 +23,7 @@ function dailyCounts(): Record<string, number> {
   return Object.fromEntries(rows.map((r) => [r.d, r.n]));
 }
 
-export function registerStatsRoutes(app: FastifyInstance): void {
-  app.get("/api/stats", async () => {
+export async function getStatsResponse(): Promise<unknown> {
     const db = getDb();
 
     const totalRow = db.prepare("SELECT COUNT(*) AS n, MIN(gdt) AS minD, MAX(gdt) AS maxD FROM tickets").get() as {
@@ -112,5 +111,8 @@ export function registerStatsRoutes(app: FastifyInstance): void {
       paretoDetay: computePareto(kokNedenDetay, 15),
       paretoGrup: computePareto(kokNedenGrup, 12),
     };
-  });
+}
+
+export function registerStatsRoutes(app: FastifyInstance): void {
+  app.get("/api/stats", async () => getStatsResponse());
 }

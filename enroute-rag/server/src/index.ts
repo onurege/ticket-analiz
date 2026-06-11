@@ -16,6 +16,7 @@ import { registerTicketRoutes } from "./api/tickets.js";
 import { registerRecategorizeRoutes } from "./api/recategorize.js";
 import { registerCategorizeRoutes } from "./api/categorize.js";
 import { registerFeedbackRoutes } from "./api/feedback.js";
+import { registerV1Routes } from "./api/v1.js";
 import { indexStats } from "./lib/vector-store.js";
 import { startIngestor, runOnce } from "./ingestor/index.js";
 
@@ -28,8 +29,10 @@ async function bootstrap(): Promise<void> {
     logger: { level: config.server.env === "development" ? "info" : "warn" },
   });
 
+  // CORS: dev/UI + Varuna gibi dış sistemler için hepsi açık
+  // (auth ileride Bearer Token ile yapılacak — şimdilik her isteği kabul)
   await app.register(cors, {
-    origin: [config.server.webOrigin, /\.localhost(:\d+)?$/],
+    origin: true,
     credentials: true,
   });
 
@@ -50,6 +53,10 @@ async function bootstrap(): Promise<void> {
   registerRecategorizeRoutes(app);
   registerCategorizeRoutes(app);
   registerFeedbackRoutes(app);
+
+  // ─── /api/v1/* — Varuna entegrasyonu ────────────────────────
+  // v1.ts içinde: /health, /stats, /categorize, /kb/search, /kb/ask, /analyze
+  await app.register(registerV1Routes, { prefix: "/api/v1" });
 
   // Health'e vector store ekle
   app.get("/api/health/embeddings", async () => indexStats());

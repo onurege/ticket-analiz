@@ -135,68 +135,68 @@ KARAR PRENSİPLERİ:
 }`;
 }
 
+/** Categorize işini Fastify handler'ından bağımsız yapan core fonksiyon. */
+export async function runCategorize(text: string, k = 10): Promise<
+  | { error: string; status: number; raw?: string }
+  | (CategorizeResult & { meta: { model: string; similarSearchMs: number; aiMs: number; k: number } })
+> {
+  const trimmed = text.trim();
+  if (trimmed.length < 10) {
+    return { error: "Metin çok kısa (min 10 char)", status: 400 };
+  }
+  const K = Math.min(20, Math.max(3, k));
+
+  const t0 = Date.now();
+  const similar = await searchSimilar(trimmed, K);
+  const tSim = Date.now() - t0;
+
+  if (similar.length === 0) {
+    return { error: "Vector store boş, önce bootstrap çalıştır", status: 404 };
+  }
+
+  const tAi0 = Date.now();
+  const model = getGenClient().getGenerativeModel({
+    model: GEN_MODEL,
+    generationConfig: { temperature: 0.1, responseMimeType: "application/json" },
+  });
+  const prompt = buildPrompt(trimmed, similar);
+  const result = await model.generateContent(prompt);
+  const raw = result.response.text();
+  const tAi = Date.now() - tAi0;
+
+  let parsed: CategorizeResult;
+  try {
+    parsed = JSON.parse(extractJson(raw));
+  } catch {
+    return { error: "AI cevabı parse edilemedi", status: 500, raw };
+  }
+
+  parsed.similarExamples = similar.slice(0, 5).map((s) => ({
+    bildirimNo: s.bildirimNo,
+    similarity: Number(s.similarity.toFixed(3)),
+    musteriSorunu: s.musteriSorunu.slice(0, 150),
+    labels: {
+      kategori: s.kategori,
+      islem_tipi: s.islemTipi,
+      kok_neden_grup: s.kokNedenGrup,
+    },
+  }));
+
+  return {
+    ...parsed,
+    meta: { model: GEN_MODEL, similarSearchMs: tSim, aiMs: tAi, k: K },
+  };
+}
+
 export function registerCategorizeRoutes(app: FastifyInstance): void {
   app.post<{ Body: CategorizeBody }>("/api/categorize", async (req, reply) => {
-    const text = (req.body?.text ?? "").trim();
-    if (text.length < 10) {
-      reply.code(400);
-      return { error: "Metin çok kısa (min 10 char)" };
-    }
-
-    const k = Math.min(20, Math.max(3, req.body?.k ?? 10));
-
     try {
-      // 1. Embedding + similarity search
-      const t0 = Date.now();
-      const similar = await searchSimilar(text, k);
-      const tSim = Date.now() - t0;
-
-      if (similar.length === 0) {
-        reply.code(404);
-        return { error: "Vector store boş, önce bootstrap çalıştır" };
+      const r = await runCategorize(req.body?.text ?? "", req.body?.k);
+      if ("error" in r) {
+        reply.code(r.status);
+        return r;
       }
-
-      // 2. Gemini'ye sor
-      const tAi0 = Date.now();
-      const model = getGenClient().getGenerativeModel({
-        model: GEN_MODEL,
-        generationConfig: { temperature: 0.1, responseMimeType: "application/json" },
-      });
-      const prompt = buildPrompt(text, similar);
-      const result = await model.generateContent(prompt);
-      const raw = result.response.text();
-      const tAi = Date.now() - tAi0;
-
-      // 3. Parse
-      let parsed: CategorizeResult;
-      try {
-        parsed = JSON.parse(extractJson(raw));
-      } catch {
-        reply.code(500);
-        return { error: "AI cevabı parse edilemedi", raw };
-      }
-
-      // 4. Similar examples'ı küçült (response için)
-      parsed.similarExamples = similar.slice(0, 5).map((s) => ({
-        bildirimNo: s.bildirimNo,
-        similarity: Number(s.similarity.toFixed(3)),
-        musteriSorunu: s.musteriSorunu.slice(0, 150),
-        labels: {
-          kategori: s.kategori,
-          islem_tipi: s.islemTipi,
-          kok_neden_grup: s.kokNedenGrup,
-        },
-      }));
-
-      return {
-        ...parsed,
-        meta: {
-          model: GEN_MODEL,
-          similarSearchMs: tSim,
-          aiMs: tAi,
-          k,
-        },
-      };
+      return r;
     } catch (e) {
       reply.code(500);
       return { error: (e as Error).message };
